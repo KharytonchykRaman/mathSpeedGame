@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 #include <ctime>
 #include <conio.h>
@@ -6,7 +6,7 @@
 #define MIN_NUMBER 1
 #define MAX_NUMBER 9
 
-#define ERROR_MSG "ERROR! Wrong answer (неправильный ответ). Try again..."
+#define ERROR_MSG "ERROR! Wrong answer (РЅРµРїСЂР°РІРёР»СЊРЅС‹Р№ РѕС‚РІРµС‚). Try again..."
 
 using namespace std;
 
@@ -28,14 +28,14 @@ int main() {
 		cout << "Exercises that you perform for just 2-5 minutes every day";
 		cout << "\nhelp to actively develop your memory, thinking and attention.";
 
-		cout << "\n\nУпражнения, которые Вы выполняете всего 2-5 минут каждый день,";
-		cout << "\nпомогаю активно развивать память, мышление и внимание.\n";
+		cout << "\n\nРЈРїСЂР°Р¶РЅРµРЅРёСЏ, РєРѕС‚РѕСЂС‹Рµ Р’С‹ РІС‹РїРѕР»РЅСЏРµС‚Рµ РІСЃРµРіРѕ 2-5 РјРёРЅСѓС‚ РєР°Р¶РґС‹Р№ РґРµРЅСЊ,";
+		cout << "\nРїРѕРјРѕРіР°СЋ Р°РєС‚РёРІРЅРѕ СЂР°Р·РІРёРІР°С‚СЊ РїР°РјСЏС‚СЊ, РјС‹С€Р»РµРЅРёРµ Рё РІРЅРёРјР°РЅРёРµ.\n";
 
-		int number = read_int("\nInput number of exercise (количество решаемых примеров): ");
+		int number = read_int("\nInput number of exercise (РєРѕР»РёС‡РµСЃС‚РІРѕ СЂРµС€Р°РµРјС‹С… РїСЂРёРјРµСЂРѕРІ): ");
 
-		cout << "\nLet's do it (сделаем это)!" << endl;
+		cout << "\nLet's do it (СЃРґРµР»Р°РµРј СЌС‚Рѕ)!" << endl;
 		long start_time = time(NULL);
-		cout << "\nSTART time (стартовое время): " + convert_to_string(start_time, true) << "\n\n";
+		cout << "\nSTART time (СЃС‚Р°СЂС‚РѕРІРѕРµ РІСЂРµРјСЏ): " + convert_to_string(start_time, true) << "\n\n";
 
 		int error = 0;
 		int count = 0;
@@ -48,7 +48,7 @@ int main() {
 			while (b == a) {
 				b = rand_number(MIN_NUMBER, MAX_NUMBER);
 			}
-
+			
 			int c = rand_number(MIN_NUMBER, MAX_NUMBER);
 			while (c == a || c == b) {
 				c = rand_number(MIN_NUMBER, MAX_NUMBER);
@@ -81,9 +81,9 @@ int main() {
 			else {
 				msg += " - " + to_string(b) + " + ";
 			}
-
+			
 			msg += to_string(c) + " = ";
-
+			
 			int answer;
 
 			do {
@@ -95,13 +95,13 @@ int main() {
 		}
 
 		long finish_time = time(NULL);
-		cout << "\nFINISH time (финишное время): " + convert_to_string(finish_time, true) << endl;
+		cout << "\nFINISH time (С„РёРЅРёС€РЅРѕРµ РІСЂРµРјСЏ): " + convert_to_string(finish_time, true) << endl;
 
-		cout << "\nYour TOTAL time for exercises (Ваше общее время): "
+		cout << "\nYour TOTAL time for exercises (Р’Р°С€Рµ РѕР±С‰РµРµ РІСЂРµРјСЏ): " 
 			+ convert_to_string(finish_time - start_time, false) << endl;
 
 		cin.ignore();
-		cout << "\nTry again (попробуем ещё раз)? (y/n)";
+		cout << "\nTry again (РїРѕРїСЂРѕР±СѓРµРј РµС‰С‘ СЂР°Р·)? (y/n)";
 		yesno = tolower(_getch());
 
 	} while (yesno == 'y');
@@ -110,9 +110,9 @@ int main() {
 
 	cout << "\nDo not forget about daily training to develop your intellect.";
 	cout << "\nNo excuses!!! ";
-	cout << "\nНе забывайте о ежедневных тренировках для развития себя и своего интеллекта.";
-	cout << "\nНикаких оправданий!!!";
-	cout << "\n\nSee you (увидимся ещё) ... :)\n\n";
+	cout << "\nРќРµ Р·Р°Р±С‹РІР°Р№С‚Рµ Рѕ РµР¶РµРґРЅРµРІРЅС‹С… С‚СЂРµРЅРёСЂРѕРІРєР°С… РґР»СЏ СЂР°Р·РІРёС‚РёСЏ СЃРµР±СЏ Рё СЃРІРѕРµРіРѕ РёРЅС‚РµР»Р»РµРєС‚Р°.";
+	cout << "\nРќРёРєР°РєРёС… РѕРїСЂР°РІРґР°РЅРёР№!!!";
+	cout << "\n\nSee you (СѓРІРёРґРёРјСЃСЏ РµС‰С‘) ... :)\n\n";
 
 	return 0;
 }
