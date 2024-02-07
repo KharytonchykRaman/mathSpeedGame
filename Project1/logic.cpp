@@ -1,9 +1,9 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string>
 #include <ctime>
 #include <conio.h>
 
-#define ERROR_INT "ERROR! Wrong int value (ошибка ввода целочисленного значения). Try again..."
+#define ERROR_INT "ERROR! Wrong int value (РѕС€РёР±РєР° РІРІРѕРґР° С†РµР»РѕС‡РёСЃР»РµРЅРЅРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ). Try again..."
 
 using namespace std;
 
